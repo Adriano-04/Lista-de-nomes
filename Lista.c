@@ -136,6 +136,7 @@ int main() //função principal
 		printf("\t 1- Adicionar nome \n");
 		printf("\t 2- Consultar nomes \n");
 		printf("\t 3- Deletar nome \n \n");
+		printf("\t 4- Sair do Sistema \n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &escolha); //Guarda a tecla apertada na variavel 'escolha'
@@ -154,6 +155,11 @@ int main() //função principal
 		
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por usar o sistema.");
+			return 0;
 			break;
 		
 			default: //Caso qualquer outro número seja digitado que nao esteja entre as opções
